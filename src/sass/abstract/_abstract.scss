@@ -1,0 +1,13 @@
+//@mixin definitions===================
+@mixin textstyle() {
+  background-color: yellow;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+// variable declarations
+$color-White: hsl(0, 0%, 100%);
+$color-Off-white: hsl(0, 0%, 94%);
+$color-Light-grey: hsl(0, 0%, 86%);
+$color-Smokey-grey: hsl(0, 1%, 44%);
+$color-Off-black: hsl(0, 0%, 8%);
