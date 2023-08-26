@@ -1,0 +1,25 @@
+.main {
+  background-color: $color-White;
+  width: 80%;
+  height: 80vh;
+  margin: 4rem auto;
+  padding: 5rem 2rem;
+  border-radius: 1rem 1rem 5rem 1rem;
+
+  @media only screen and (min-width: 375px) {
+    padding-top: 7rem;
+  }
+
+  @media only screen and (min-width: 675px) {
+    height: 100vh;
+  }
+  @media only screen and (min-width: 675px) and (max-width: 1200px) {
+    height: 80vh;
+  }
+  @media only screen and (min-width: 1200px) {
+    height: 80vh;
+  }
+  @media only screen and (min-width: 1400px) {
+    height: 100vh;
+  }
+}

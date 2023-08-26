@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  justify-content: space-around;
+  margin-bottom: 8rem;
+  border-bottom: 1px solid $color-Smokey-grey;
+
+  input[type="text"] {
+    width: 95%;
+    height: 3rem;
+    border: 1px solid $color-Light-grey;
+    padding-left: 0.8rem;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    &:hover {
+      cursor: pointer;
+      border: 2px solid $color-Light-grey;
+    }
+    &::-webkit-input-placeholder {
+      font-size: 1rem;
+      color: $color-Smokey-grey;
+      font-weight: 700;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0px;
+  }
+  label {
+    font-size: 1rem;
+    color: $color-Smokey-grey;
+    font-weight: 400;
+  }
+  .btn_submit {
+    background-color: $color-Purple;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    top: 6.5rem;
+    left: -60%;
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media only screen and (min-width: 675px) {
+      left: -7%;
+    }
+
+    @media only screen and (min-width: 1400px) {
+      width: 3rem;
+      background-color: $color-Off-black;
+    }
+  }
+}

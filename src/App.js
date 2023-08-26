@@ -1,8 +1,9 @@
+import Main from "./components/Main";
+
 function App() {
   return (
     <div>
-      <h1>Welcome!!!</h1>
-      <h2>Test app</h2>
+      <Main />
     </div>
   );
 }

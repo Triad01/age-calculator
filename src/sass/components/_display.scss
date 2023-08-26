@@ -1,0 +1,19 @@
+.display {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  transform: translateY(-3rem);
+
+  @media only screen and (min-width: 675px) and (max-width: 950px) {
+    margin-top: 3rem;
+    font-size: 5rem;
+  }
+  @media only screen and (min-width: 1400px) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 7rem;
+  }
+  span {
+    margin-right: 0.8rem;
+    color: $color-Purple;
+  }
+}

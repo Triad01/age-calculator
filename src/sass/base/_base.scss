@@ -3,19 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 100%;
+}
 body {
-  background-color: blue;
+  background-color: $color-Light-grey;
   .heading {
     @include textstyle;
   }
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.divContainer {
-  background-color: $color-Smokey-grey;
-  color: white;
-  font-size: 5rem;
 }
