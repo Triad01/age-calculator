@@ -27,9 +27,13 @@ const Form = () => {
       return { ...prevData, year: event.target.value };
     });
   };
+  const onClickHandler = () => {
+    userAgeContext.calcAge(formData);
+  };
   const formSubmitHandler = (event) => {
     event.preventDefault();
     userAgeContext.calcAge(formData);
+    //reset form input
     setFormData({
       day: "",
       month: "",
@@ -69,6 +73,7 @@ const Form = () => {
         ></input>
       </div>
       <button
+        onClick={onClickHandler}
         src={submitButton}
         alt="submit button icon"
         className={classes.btn_submit}
