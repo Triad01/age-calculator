@@ -6,6 +6,9 @@
   justify-content: space-around;
   margin-bottom: 8rem;
   border-bottom: 1px solid $color-Smokey-grey;
+  @media only screen and (min-width: 1000px) {
+    transform: translateY(-4rem);
+  }
 
   input[type="text"] {
     width: 95%;
@@ -45,14 +48,20 @@
   }
   .btn_submit {
     background-color: $color-Purple;
+    outline: none;
+    border: none;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     position: relative;
     top: 6.5rem;
     left: -60%;
+    transition: all 0.3s ease-in;
+    background-image: url("../../assets/images/icon-arrow.svg");
     &:hover {
       cursor: pointer;
+      background-color: $color-Off-black;
+      transition: all 0.3s ease-in;
     }
 
     @media only screen and (min-width: 675px) {

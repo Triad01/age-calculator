@@ -1,28 +1,34 @@
 import classes from "./Display.module.scss";
-// import displayIcon from "../assets/images/icon-arrow.svg";
+import React, { useContext } from "react";
+import Context from "./store/Context";
 
 const Display = () => {
+  const userAgeContext = useContext(Context);
+  const day = userAgeContext.day;
+  const month = userAgeContext.month;
+  const year = userAgeContext.year;
+
   return (
     <div>
       <div className={classes.display}>
-        {/* <img className={classes.icon} src={displayIcon} alt="display icon" /> */}
         <div>
           <i>
-            <span>38</span>years
+            <span>{year}</span>years
           </i>
         </div>
         <div>
           <i>
-            <span>--</span>months
+            <span>{month}</span>months
           </i>
         </div>
         <div>
           <i>
-            <span>--</span>days
+            <span>{day}</span>days
           </i>
         </div>
       </div>
     </div>
   );
 };
-export default Display;
+
+export default React.memo(Display);

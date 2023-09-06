@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import DateContextProvider from "./components/store/DateContextProvider";
 
 import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <DateContextProvider>
+      <App />
+    </DateContextProvider>
   </React.StrictMode>
 );
 
